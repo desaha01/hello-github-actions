@@ -13,3 +13,9 @@ jobs:
         run: |
           pwd
           ls 
+          - name: checkout code
+        uses: actions/checkout@v3
+        
+      - name: Listing contents after checkout
+        run: |
+          ls
