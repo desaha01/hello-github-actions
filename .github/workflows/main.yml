@@ -6,14 +6,12 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello world
-        run: echo Hello world
-    
-      - name: Multi line step
+      - name: Listing contents before checkout
         run: |
           pwd
-          ls 
-          - name: checkout code
+          ls
+          
+      - name: checkout code
         uses: actions/checkout@v3
         
       - name: Listing contents after checkout
