@@ -1,6 +1,10 @@
 name: first workflow
 
-on: [push]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   first-job:
@@ -12,4 +16,4 @@ jobs:
       - name: Multi line step1
         run: |
           pwd
-          ls 
+          ls
