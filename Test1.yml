@@ -9,7 +9,7 @@ jobs:
       - name: Say Hello world
         run: echo Hello world
     
-      - name: Multi line step
+      - name: Multi line step1
         run: |
           pwd
           ls 
