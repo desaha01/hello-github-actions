@@ -1,0 +1,28 @@
+<people>
+  <person id="1">
+    <name>John</name>
+    <address>
+      <street>123 Main St</street>
+      <city>Anytown</city>
+      <state>CA</state>
+      <zip>12345</zip>
+    </address>
+    <address>
+      <street>456 Oak St</street>
+      <city>Anytown</city>
+      <state>CA</state>
+      <zip>12345</zip>
+    </address>
+  </person>
+  <person id="2">
+    <name>Jane</name>
+    <address>
+      <street>789 Elm St</street>
+      <city>Anytown</city>
+      <state>CA</state>
+      <zip>12345</zip>
+    </address>
+    ...
+  </person>
+  ...
+</people>
