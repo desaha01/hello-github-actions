@@ -26,11 +26,12 @@ jobs:
         uses: actions/checkout@v3
       - id: get_step
         run: |
-          count=$(wc -l < ./sample.sh)
-          echo "Line count: $count"
-          echo "COUNT=$count" >> $GITHUB_ENV
-          id: count_step
+          echo "COUNT=$(wc -l < ./sample.sh | awk '{print $1}')" >> $GITHUB_ENV
+      - name: Set outputs
+        id: set_step
+        run: |
+          echo "::set-output name=COUNT::$(wc -l < ./sample.sh | awk '{print $1}')"
     outputs:
-            needs: first-job
-            count: ${{ steps.get_step.outputs.COUNT }}
+      COUNT: ${{ steps.set_step.outputs.COUNT }}
+
 
