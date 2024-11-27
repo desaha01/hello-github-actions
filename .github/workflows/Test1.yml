@@ -1,4 +1,4 @@
-name: first workflow
+name: Screenshot Workflow
 
 on:
   workflow_dispatch:
@@ -7,31 +7,21 @@ on:
       - main
 
 jobs:
-  first-job:
+  run-screenshot:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello world
-        run: echo Hello world
-    
-      - name: Multi line step1
-        run: |
-          pwd
-          ls
-
-  get_current_step:
-    name: Check current step number
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
-      - id: get_step
-        run: |
-          echo "COUNT=$(wc -l < ./sample.sh | awk '{print $1}')" >> $GITHUB_ENV
-      - name: Set outputs
-        id: set_step
-        run: |
-          echo "::set-output name=COUNT::$(wc -l < ./sample.sh | awk '{print $1}')"
-    outputs:
-      COUNT: ${{ steps.set_step.outputs.COUNT }}
 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests selenium webdriver_manager beautifulsoup4
+
+      - name: Run Screenshots.py
+        run: python Screenshots.py
