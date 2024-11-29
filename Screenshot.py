@@ -41,12 +41,16 @@ def take_screenshot():
     # Set up Selenium WebDriver (Chrome in this case)
     options = webdriver.ChromeOptions()
     options.headless = True  # Run in headless mode to not open a browser window
-    options.add_argument("--log-level=3")  # Suppress logging
-    options.add_argument("--disable-logging")
-    options.add_argument("--disable-extensions")
-    options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-logging")
+    options.add_argument("--log-level=3")  # Suppress logging
+    options.add_argument("--remote-debugging-port=9222")  # Enable remote debugging
+    options.add_argument("--headless")  # Ensure headless mode is enabled
+    options.add_argument("--disable-software-rasterizer")  # Disable software rasterizer
+
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     try:
@@ -80,7 +84,6 @@ def send_email(screenshot):
     try:
         server = smtplib.SMTP(smtp_server, smtp_port)
         server.starttls()
-        server.login(sender_email, smtp_password)
         text = msg.as_string()
         server.sendmail(sender_email, recipient_email, text)
         server.quit()
