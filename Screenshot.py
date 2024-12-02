@@ -10,7 +10,7 @@ from email import encoders
 from email.mime.text import MIMEText
 from io import BytesIO
 
-# URL of your status page
+# URL of your status page.
 status_page_url = "https://lexisnexisprogressive.statuspage.io/"
 
 # The expected operational status
