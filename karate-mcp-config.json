@@ -1,0 +1,30 @@
+{
+  "name": "Karate MCP Server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for Karate testing framework",
+  "server": {
+    "command": "python",
+    "args": ["karate_mcp_server.py"],
+    "env": {}
+  },
+  "tools": [
+    {
+      "name": "run_karate_test",
+      "description": "Run a Karate feature file or specific scenario with optional tag filtering"
+    },
+    {
+      "name": "list_karate_features",
+      "description": "List all available Karate feature files with their scenarios"
+    },
+    {
+      "name": "get_test_results",
+      "description": "Get the results of the last Karate test run with optional detailed information"
+    }
+  ],
+  "configuration": {
+    "base_path": ".",
+    "features_directory": "karate-tests/features",
+    "results_directory": "karate-tests/target/karate-reports",
+    "timeout": 300
+  }
+}
