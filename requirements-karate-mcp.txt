@@ -1,0 +1,16 @@
+# MCP Server for Karate - Python Dependencies
+
+# No additional dependencies required for the basic MCP server
+# The server uses only Python standard library modules:
+# - json
+# - subprocess
+# - os
+# - glob
+# - pathlib
+# - typing
+
+# Optional: For enhanced MCP protocol support
+# mcp>=0.1.0  # Uncomment if using official MCP Python SDK
+
+# Note: Karate framework itself requires Java and Maven to be installed
+# separately on the system
