@@ -1,0 +1,17 @@
+{
+  "name": "generated-playwright-tests",
+  "version": "1.0.0",
+  "description": "Auto-generated Playwright tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}

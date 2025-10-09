@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "endpoints_tested": 4,
+  "all_tests_passed": true,
+  "mock_port": 8080,
+  "timestamp": "2025-10-08T12:39:09.489419",
+  "demo_type": "mock_server"
+}

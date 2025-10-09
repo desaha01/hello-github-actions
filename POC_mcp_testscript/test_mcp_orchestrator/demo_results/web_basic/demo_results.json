@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "actions_completed": 7,
+  "screenshots_taken": 1,
+  "report_path": "./web_results/demo_web_report.html",
+  "timestamp": "2025-10-08T12:39:02.440850",
+  "demo_type": "web_basic"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "scenarios_run": 5,
+  "scenarios_passed": 5,
+  "scenarios_failed": 0,
+  "avg_response_time": 245,
+  "report_path": "./karate_results/demo_jsonplaceholder_report.html",
+  "timestamp": "2025-10-08T12:38:57.914993",
+  "demo_type": "api_basic"
+}

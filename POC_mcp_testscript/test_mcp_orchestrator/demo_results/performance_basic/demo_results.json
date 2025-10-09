@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "total_requests": 1487,
+  "avg_response_time": 187,
+  "success_rate": 100,
+  "report_path": "./performance_results/demo_load_test.html",
+  "timestamp": "2025-10-08T12:39:06.448944",
+  "demo_type": "performance_basic"
+}

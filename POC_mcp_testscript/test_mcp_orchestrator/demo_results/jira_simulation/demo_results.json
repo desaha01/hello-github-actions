@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "jira_key": "DEMO-1234",
+  "web_tests": 8,
+  "api_scenarios": 12,
+  "integration_flows": 3,
+  "all_passed": true,
+  "timestamp": "2025-10-08T12:39:20.547894",
+  "demo_type": "jira_simulation"
+}

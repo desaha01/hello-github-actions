@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "api_scenarios": 8,
+  "web_scenarios": 6,
+  "integration_flows": 1,
+  "overall_success": true,
+  "timestamp": "2025-10-08T12:39:15.514873",
+  "demo_type": "integration_full"
+}
